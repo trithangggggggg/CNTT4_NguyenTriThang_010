@@ -134,7 +134,6 @@ add_executable(PTIT_CNTT4_IT103 main.c
         PTIT_CNTT4_IT201_OnTapHackathon/demo_hackthon_thayAn.c
         HN_KS24_CNTT4_NguyenTriThang/hackathon_bai01.c
         HN_KS24_CNTT4_NguyenTriThang/hackathon_bai02.c
-        HN_KS24_CNTT4_NguyenTriThang/hackathon07_bai01.c
         PTIT_CNTT4_IT201_Session19/PTIT_CNTT4_IT201_Session19_Bai01.c
         PTIT_CNTT4_IT201_Session19/PTIT_CNTT4_IT201_Session19_Bai02.c
         PTIT_CNTT4_IT201_Session19/PTIT_CNTT4_IT201_Session19_Bai03.c
@@ -163,4 +162,9 @@ add_executable(PTIT_CNTT4_IT103 main.c
         Stack.c
         Queue.c
         demo_kiemtra/baitap1.c
+        demo_kiemtra/UndoRedo.c
+        BinaryTree.c
+        demo_kiemtra/WebHistory.c
+        PTIT_HN_JPN_CNTT4_IT201_NguyenTriThang_010/CNTT4_NguyenTriThang_010_Bai01.c
+        PTIT_HN_JPN_CNTT4_IT201_NguyenTriThang_010/CNTT4_NguyenTriThang_010_Bai02.c
 )
