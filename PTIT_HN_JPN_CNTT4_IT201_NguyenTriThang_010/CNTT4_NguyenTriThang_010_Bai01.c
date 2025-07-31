@@ -150,6 +150,19 @@ DoubleNode* updateDoubleNodeById(DoubleNode *head, int id) {
     return head;
 }
 
+void sortByCategory(DoubleNode *head) {
+    DoubleNode *i, *j;
+    for (i = head; i != NULL; i = i->next) {
+        for (j = i->next; j != NULL; j = j->next) {
+            if (strcmp(i->book.category, j->book.category) > 0) {
+                Book temp = i->book;
+                i->book = j->book;
+                j->book = temp;
+            }
+        }
+    }
+}
+
 
 //case 7
 void searchByNameBook(DoubleNode *head, char *name ) {
@@ -184,7 +197,7 @@ void menu() {
     printf("3. Xoa sach \n");
     printf("4. Cap nhat thong tin sach\n");
     printf("5. Danh dau sach cho thue\n");
-    printf("6. Sap xep sach(theo ten tac gia)\n");
+    printf("6. Sap xep sach(theo phan loai )\n");
     printf("7. Tim kiem sach (theo ten)\n");
     printf("8. Thoat chuong trinh\n");
 }
@@ -246,7 +259,8 @@ int main() {
                 printf("Chuc nang chua duoc cap nhat!!\n");
                 break;
             case 6:
-                printf("Chuc nang chua duoc cap nhat!!\n");
+                sortByCategory(doubleHead);
+                displayDoubleNode(doubleHead);
                 break;
             case 7:
                 char searchNameBook[50];
