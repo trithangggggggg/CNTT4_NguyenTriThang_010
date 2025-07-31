@@ -15,8 +15,8 @@ typedef struct Node {
 typedef struct Employee {
     char name[50];
     char date[50];
-    Node *left = NULL;
-    Node *right = NULL;
+    struct Node *left;
+    struct Node *right;
 } Employee;
 
 typedef struct Queue {
